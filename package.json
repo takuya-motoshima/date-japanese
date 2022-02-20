@@ -11,7 +11,7 @@
     "prewatch": "rm -rf dist types",
     "build": "rollup -c",
     "prebuild": "rm -rf dist types",
-    "test": "jest"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,10 @@
     "typescript",
     "ts",
     "esm",
-    "es6"
+    "es6",
+    "calendar",
+    "gregorian",
+    "japanese"
   ],
   "author": "Takuya Motoshima <developer.takuyamotoshima@gmail.com> (https://twitter.com/TakuyaMotoshima)",
   "license": "MIT",

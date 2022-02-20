@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>date-japanese browser example</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+      table  img {
+        height: 16px;
+        width: 16px;
+      }
+
+  </style>
+</head>
+<body>
+  <h1>Convert from Japanese calendar to Western calendar.</h1>
+  <table border="1" id="japanesCalendarDates">
+    <thead>
+      <tr>
+        <th>Input data</th>
+        <th>Output format</th>
+        <th>Output data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>明治元年1月25日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>明治45年7月29日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>大正元年7月30日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>大正15年12月24日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>昭和元年12月25日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>昭和64年1月7日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>平成元年1月8日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>平成31年4月30日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>令和元年5月1日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>令和4年2月21日</td><td>YYYY-MM-DD</td><td><img src="loading.gif"></td></tr>
+      <tr><td>明治元年1月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>明治45年7月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>大正元年7月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>大正15年12月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>昭和元年12月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>昭和64年1月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>平成元年1月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>平成31年4月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>令和元年5月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>令和4年2月</td><td>YYYY-MM</td><td><img src="loading.gif"></td></tr>
+      <tr><td>明治元年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>明治45年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>大正元年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>大正15年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>昭和元年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>昭和64年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>平成元年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>平成31年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>令和元年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+      <tr><td>令和4年</td><td>YYYY</td><td><img src="loading.gif"></td></tr>
+    </tbody>
+  </table>  
+
+  <h1>Convert from Western calendar to Japanese calendar.</h1>
+  <table border="1" id="westernCalendarDates">
+    <thead>
+      <tr>
+        <th>Input data</th>
+        <th>Output data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1868-01-25</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1912-07-29</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1912-07-30</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1926-12-24</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1926-12-25</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1989-01-07</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1989-01-08</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2019-04-30</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2019-05-01</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2022-02-21</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1868-01</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1912-07</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1912-08</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1926-12</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1927-01</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1989-01</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1989-02</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2019-04</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2019-05</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2022-02</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1868</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1912</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1913</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1926</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1927</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1989</td><td><img src="loading.gif"></td></tr>
+      <tr><td>1990</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2019</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2020</td><td><img src="loading.gif"></td></tr>
+      <tr><td>2022</td><td><img src="loading.gif"></td></tr>
+    </tbody>
+  </table>
+  <script type="module">
+    import {jp2west, west2jp} from '../dist/build.esm.js';
+
+    async function main() {
+      // Convert from Japanese calendar to Western calendar.
+      for (let row of document.querySelectorAll('#japanesCalendarDates tbody tr')) {
+        await sleep(50);
+        const input = row.querySelector('td:nth-child(1)').textContent;
+        const format = row.querySelector('td:nth-child(2)').textContent;
+        const output = jp2west(input, format, false);
+        row.querySelector('td:nth-child(3)').textContent = output;
+      }
+
+      // Convert from Western calendar to Japanese calendar.
+      for (let row of document.querySelectorAll('#westernCalendarDates tbody tr')) {
+        await sleep(50);
+        const input = row.querySelector('td:nth-child(1)').textContent;
+        const output = west2jp(input);
+        row.querySelector('td:nth-child(2)').textContent = output;
+      }
+    }
+
+    /**
+     * Sleep for specified milliseconds.
+     */
+    async function sleep(millisecond) {
+      return new Promise(rslv => setTimeout(rslv, millisecond));
+    }
+
+    main();
+  </script>
+</body>
+</html>

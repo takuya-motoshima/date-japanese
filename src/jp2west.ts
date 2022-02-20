@@ -5,7 +5,7 @@ import 'moment/locale/ja';
  * Convert Japanese calendar date to Western calendar date.
  * The eras that can be used are '明治' and '大正' and '昭和' and '平成' and '令和'.
  *
- * @param   {string}  input           Japanese calendar date. e.g. '令和4年2月20日', '令和4年2月' , '令和4年'
+ * @param   {string}  input           Japanese calendar date. e.g. '令和4年2月20日', '令和4年2月' , '令和4年'.
  * @param   {string}  format          Output date format. The following tokens are available. The default is 'YYYY-MM-DD'
  *                                    YYYY - 4 digit of year (2022)
  *                                    YY   - 2 digit of year (22)
@@ -18,7 +18,11 @@ import 'moment/locale/ja';
  * @param   {boolean} throwException  If set to true, an exception will be thrown if the input date is invalid as the Japanese calendar.
  * @returns {string}                  Returns a Japanese calendar date as a date in the specified format.
  */
-export default function(input: string, format:string = 'YYYY-MM-DD', throwException: boolean = true): string {
+export default function(
+  input: string,
+  format: string = 'YYYY-MM-DD',
+  throwException: boolean = true
+): string {
   // console.log(`input=${input}, format=${format}, throwException=${throwException}`);
 
   // Set the locale to Japanese.

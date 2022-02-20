@@ -1,4 +1,4 @@
-const cal = require('../dist/build.common');
+const {west2jp} = require('../dist/build.common');
 
 const inputs = [
   '2022/2/20',
@@ -7,6 +7,6 @@ const inputs = [
 ];
 
 for (let input of inputs) {
-  const output = cal.west2jp(input);
-  console.log(`${input} -> ${output}`);
+  const output = west2jp(input);
+  console.log(`${input} to ${output}`);
 }

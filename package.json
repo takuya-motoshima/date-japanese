@@ -1,0 +1,67 @@
+{
+  "name": "date-japanese",
+  "version": "1.0.0",
+  "description": "Convert Japanese calendar to Western calendar, Western calendar to Japanese calendar.",
+  "main": "dist/build.common.js",
+  "module": "dist/build.esm.js",
+  "browser": "dist/build.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "watch": "rollup -c --watch",
+    "prewatch": "rm -rf dist types",
+    "build": "rollup -c",
+    "prebuild": "rm -rf dist types",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takuya-motoshima/date-japanese.git"
+  },
+  "files": [
+    "dist/*.js",
+    "types/*.d.ts",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "examples"
+  ],
+  "keywords": [
+    "browser",
+    "javascript",
+    "js",
+    "library",
+    "lib",
+    "module",
+    "typescript",
+    "ts",
+    "esm",
+    "es6"
+  ],
+  "author": "Takuya Motoshima <developer.takuyamotoshima@gmail.com> (https://twitter.com/TakuyaMotoshima)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takuya-motoshima/date-japanese/issues",
+    "email": "developer.takuyamotoshima@gmail.com"
+  },
+  "homepage": "https://github.com/takuya-motoshima/date-japanese#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-replace": "^3.1.0",
+    "@types/jest": "^27.4.0",
+    "fetch-mock": "^9.11.0",
+    "jest": "^27.5.1",
+    "rollup": "^2.67.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "ts-jest": "^27.1.3",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.5.5"
+  }
+}

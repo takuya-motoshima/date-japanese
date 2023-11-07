@@ -1,6 +1,6 @@
 {
   "name": "date-japanese",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert Japanese calendar to Western calendar, Western calendar to Japanese calendar.",
   "main": "dist/build.common.js",
   "module": "dist/build.esm.js",
@@ -22,8 +22,7 @@
     "types/*.d.ts",
     "package.json",
     "README.md",
-    "CHANGELOG.md",
-    "examples"
+    "CHANGELOG.md"
   ],
   "keywords": [
     "browser",

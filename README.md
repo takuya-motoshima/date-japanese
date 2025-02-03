@@ -16,7 +16,13 @@ npm install --save date-japanese
 const {toWesternCalendar, toJapaneseCalendar} = require('date-japanese');
 
 toWesternCalendar('令和4年2月21日', 'YYYY-MM-DD'); // -> 2022-02-21
+toWesternCalendar('令和七年一月三十一日', 'YYYY-MM-DD'); // -> 2025-01-31
+toWesternCalendar('令和4年2月', 'YYYY-MM'); // -> 2022-02
+toWesternCalendar('昭和64年', 'YYYY'); // -> 1989
+
 toJapaneseCalendar('2022-02-21'); // -> 令和4年2月21日
+toJapaneseCalendar('1989-01'); // -> 昭和64年1月
+toJapaneseCalendar('1990'); // -> 平成2年
 ```
 
 Or in ES6 syntax:
@@ -25,7 +31,13 @@ Or in ES6 syntax:
 import {toWesternCalendar, toJapaneseCalendar} from 'date-japanese';
 
 toWesternCalendar('令和4年2月21日', 'YYYY-MM-DD'); // -> 2022-02-21
+toWesternCalendar('令和七年一月三十一日', 'YYYY-MM-DD'); // -> 2025-01-31
+toWesternCalendar('令和4年2月', 'YYYY-MM'); // -> 2022-02
+toWesternCalendar('昭和64年', 'YYYY'); // -> 1989
+
 toJapaneseCalendar('2022-02-21'); // -> 令和4年2月21日
+toJapaneseCalendar('1989-01'); // -> 昭和64年1月
+toJapaneseCalendar('1990'); // -> 平成2年
 ```
 
 ### Browser
@@ -53,7 +65,9 @@ Or in ES6 syntax:
 
 ### `toWesternCalendar(japaneseDate, format, throwOnInvalid)`
 
-Converts a Japanese calendar date to a Western calendar date in the specified format. Supported eras: Meiji (明治), Taisho (大正), Showa (昭和), Heisei (平成), Reiwa (令和).
+Converts a Japanese calendar date to a Western calendar date in the specified format.   
+Supported eras: Meiji (明治), Taisho (大正), Showa (昭和), Heisei (平成), Reiwa (令和).   
+This function can also handle Japanese dates written with Kanji numerals.
 
 **Parameters:**
 
@@ -127,7 +141,6 @@ This package includes demos for various environments:
 
 ![Browser Demo Screenshot](screencaps/chrome-capture-2025-1-30.jpeg)
 
-<!-- 
 ## Prototypes
 
 ### `prototypes/run_japanese_calendar.mjs`
@@ -138,7 +151,14 @@ node prototypes/run_japanese_calendar.mjs -d 2025/1/30 # -> Western Calendar: 20
 node prototypes/run_japanese_calendar.mjs -d 2025-01 # -> Western Calendar: 2025-01, Japanese Calendar: 令和7年1月
 node prototypes/run_japanese_calendar.mjs -d 2025/1 # -> Western Calendar: 2025/1, Japanese Calendar: 令和7年1月
 node prototypes/run_japanese_calendar.mjs -d 2025 # -> Western Calendar: 2025, Japanese Calendar: 令和7年
-``` -->
+```
+
+### `prototypes/run_wester_calendar.mjs`
+
+```bash
+node prototypes/run_wester_calendar.mjs -d 令和七年一月二日 # -> Japanese Calendar: 令和七年一月二日, Western Calendar: 2025-01-02
+node prototypes/run_wester_calendar.mjs -d 大正元年7月30日 # -> Japanese Calendar: 大正元年7月30日, Western Calendar: 1912-07-30
+```
 
 ## Testing
 

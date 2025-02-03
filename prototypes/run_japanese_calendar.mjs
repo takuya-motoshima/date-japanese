@@ -1,4 +1,4 @@
-import {program, Option} from 'commander';
+import {program} from 'commander';
 import toJapaneseCalendar from './toJapaneseCalendar.mjs';
 
 const options = program

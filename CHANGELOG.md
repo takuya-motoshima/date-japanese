@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [2.0.0] - 2025/1/30
+## [2.0.0] - 2025/2/3
 ### Changed
 - Updated moment from version 2.29.1 to 2.30.1
 - Updated rollup from version 2.67.3 to 4.32.1
@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file.
     - `jp2west` to `toWesternCalendar`
     - `isJapaneseCalendar` to `isValidJapaneseCalendar`
     - `japaneseCalendarFormats` to `getJapaneseCalendarFormats`
-  - 
+
 ## [1.0.1] - 2023/11/7
 ### Added
 - Added Japanese calendar validation function (<code>isJapaneseCalendar()</code>).

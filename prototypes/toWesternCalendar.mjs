@@ -1,9 +1,9 @@
 import moment from 'moment';
-import 'moment/locale/ja';
-import isValidJapaneseCalendar from '~/isValidJapaneseCalendar';
-import getJapaneseCalendarFormats from '~/getJapaneseCalendarFormats';
-import normalizeMisrecognizedKanjiNumerals from '~/utils/normalizeMisrecognizedKanjiNumerals';
-import convertKanjiDateToNumberDate from '~/utils/convertKanjiDateToNumberDate';
+import 'moment/locale/ja.js';
+import isValidJapaneseCalendar from './isValidJapaneseCalendar.mjs';
+import getJapaneseCalendarFormats from './getJapaneseCalendarFormats.mjs';
+import normalizeMisrecognizedKanjiNumerals from './utils/normalizeMisrecognizedKanjiNumerals.mjs';
+import convertKanjiDateToNumberDate from './utils/convertKanjiDateToNumberDate.mjs';
 
 /**
  * Converts a Japanese calendar date to a Western calendar date in the specified format. 
@@ -14,7 +14,7 @@ import convertKanjiDateToNumberDate from '~/utils/convertKanjiDateToNumberDate';
  * @param {boolean} [throwOnInvalid=false] If `true`, throws an error if the input date is invalid. If `false`, returns an empty string (default: `false`).
  * @return {string} The Western calendar date in the specified format, or an empty string if the input is invalid and `throwOnInvalid` is `false`.
  */
-export default (japaneseDate: string, format: string = 'YYYY-MM-DD', throwOnInvalid: boolean = false): string => {
+export default (japaneseDate, format = 'YYYY-MM-DD', throwOnInvalid = false) => {
   // Set the locale to Japanese.
   moment.locale('ja');
 

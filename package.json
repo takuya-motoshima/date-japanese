@@ -1,6 +1,6 @@
 {
   "name": "date-japanese",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Convert Japanese calendar dates to Western calendar dates and vice versa. Full support for Kanji numerals in Wareki dates.",
   "type": "module",
   "main": "dist/build.cjs",
